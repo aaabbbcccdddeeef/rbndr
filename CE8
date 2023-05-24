@@ -1,0 +1,3 @@
+AllowUntrustedAccess("foobar.com");
+
+SendArbitraryRequests("foobar.com");
