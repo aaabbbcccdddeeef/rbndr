@@ -1,0 +1,15 @@
+// 持续调用API直到它解析到你可以控制的地址并拿到访问权
+
+while (AllowUntrustedAccesss("     c0a80180.c0a80180.rbndr.us") != true)
+
+  ;
+
+// 访问授权后，就可以等待其完成重绑定
+
+while (ConnectToPort("       c0a80180.c0a80180.rbndr.us",45371865427654835871) != true)
+
+;
+
+// 现在，我们就拿到了localhost:45371865427654835871的访问权了 
+
+SomethingEvil();
